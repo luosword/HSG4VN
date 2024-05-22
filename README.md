@@ -1,5 +1,4 @@
 <div align="center">
-<img src="./howto/figure/cityus.png" alt="HSG" width="600"/>
 
 # HSG
 </div>
@@ -41,8 +40,8 @@ Here is a from-scratch script for **HSG**.
 # Install Lit-LLaMA
 conda create -n hsg python=3.10
 conda activate hsg
-git clone https://github.com/zhoukang12321/HSG_VN.git
-cd HSG_VN
+git clone https://github.com/luosword/HSG4VN
+cd HSG4VN
 pip install -r requirements.txt
 # If you want to utilize more than one GPU
 pip install deepspeed
@@ -53,8 +52,8 @@ pip install deepspeed
 
 1. conda create -n hsg python=3.10
 2. conda activate hsg
-3. git clone https://github.com/zhoukang12321/HSG_VN
-4. cd HSG_VN
+3. git clone https://github.com/luosword/HSG4VN
+4. cd HSG4VN
 5. pip install torch==2.0.0+cu117 torchvision==0.15.1+cu117 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu117
 6. pip install sentencepiece
 7. pip install tqdm
@@ -70,7 +69,7 @@ pip install deepspeed
 
 ```bash
 # Install Detic
-# Exit the HSG_VN2 file first
+# Exit the HSG4VN file first
 cd ..
 git clone git@github.com:facebookresearch/detectron2.git
 cd detectron2
@@ -86,9 +85,9 @@ Meanwhile, you also need to download the appropriate pre-trained model and put t
 
 Once the installation is complete, we need to copy the files from **Detic** to the **hsg** directory.
 
-The HSG_VN file directory should be:
+The HSG4VN file directory should be:
 ```
-HSG_VN
+HSG4VN
 ├── checkpoints
 │   ├── lit-llama
 │   ├── llama
